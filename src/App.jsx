@@ -12,8 +12,8 @@ const App = () => {
   const [playStatus, setPlayStatus] = useState(true)
   return (
     <div>
-      <Navbar />
       <Backgound playStatus={playStatus} heroCount={heroCount} />
+      <Navbar />
     </div>
   )
 }
