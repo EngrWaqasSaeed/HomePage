@@ -1,7 +1,21 @@
-import React from 'react'
+import React, { useState } from 'react'
+import Backgound from './Components/Background/Backgound'
+import Navbar from './Components/Navbar/Navbar'
 
 const App = () => {
-  return <h1 className='bg-pink-500 h-52 w '>App</h1>
+  let heroData = [
+    { text1: 'Dive into', text2: 'What You Love' },
+    { text1: 'Follow ', text2: 'your passions' },
+    { text1: 'Give in to', text2: 'your passions' }
+  ]
+  const [heroCount, setHeroCount] = useState(2)
+  const [playStatus, setPlayStatus] = useState(true)
+  return (
+    <div>
+      <Navbar />
+      <Backgound playStatus={playStatus} heroCount={heroCount} />
+    </div>
+  )
 }
 
 export default App
