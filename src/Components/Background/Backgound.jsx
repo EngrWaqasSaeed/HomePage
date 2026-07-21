@@ -12,7 +12,7 @@ const Backgound = ({ heroCount, playStatus }) => {
       <video
         src={video1}
         type='video/mp4'
-        className='background'
+        className='background fade-in'
         autoPlay
         loop
         muted
